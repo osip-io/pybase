@@ -23,7 +23,7 @@ validate:
 	@echo "Running isort"
 	@isort -c $(FILES_PY)
 	@echo "Running safety"
-	@safety check --bare
+	@safety check
 
 build-package:
 	@python setup.py bdist_wheel
