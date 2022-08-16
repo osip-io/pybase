@@ -13,7 +13,7 @@ RUN apt-get update && \
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt --no-input && rm requirements.txt
 COPY tests/requirements.txt requirements-test.txt
-RUN if [ "$ENV" = "TEST" ] ; then pip install -r requirements-test.txt --no-input && rm requirements-test.txt ; fi
+RUN if [ "$ENV" = "TEST" ] ; then pip install --upgrade -r requirements-test.txt --no-input && rm requirements-test.txt ; fi
 
 WORKDIR /app
 

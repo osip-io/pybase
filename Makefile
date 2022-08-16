@@ -9,7 +9,7 @@ install:
 
 install-test:
 	pip install -e . && \
-	pip install -r $(CURDIR)/tests/requirements.txt && \
+	pip install --upgrade -r $(CURDIR)/tests/requirements.txt && \
 	python setup.py build_ext --inplace
 
 run-test:
