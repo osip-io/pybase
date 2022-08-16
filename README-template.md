@@ -14,8 +14,8 @@ This template contains most of the stuff you might need for a Python project.
 
 ## How to merge changes
 You can synchronize all your repoes with this base by setting:
-1. `git remote add base git@github.com:overfitted-cat/pybase.git` - this need to be ran once, it sets another remote (`base`) to point to this template
-2. (Optional) - `git remote -v` - One of the outputs should be `base	git@github.com:overfitted-cat/pybase.git (fetch)`
+1. `git remote add base git@github.com:osip-io/pybase.git` - this need to be ran once, it sets another remote (`base`) to point to this template
+2. (Optional) - `git remote -v` - One of the outputs should be `base	git@github.com:osip-io/pybase.git (fetch)`
 3. `git fetch base` - this will fetch all new commits from this template repo
 4. `git merge --no-ff base/main --allow-unrelated-histories` 
 5. `git config remote.base.pushurl "Push to the template repo is not allowed"` - just to make sure you don't update the template repo from your repo
